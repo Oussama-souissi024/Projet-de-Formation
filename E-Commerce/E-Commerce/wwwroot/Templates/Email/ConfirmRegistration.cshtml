@@ -1,0 +1,22 @@
+﻿@model string
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container { max-width: 600px; margin: 20px auto; padding: 30px; font-family: Arial; }
+        .button { background: #007bff; color: white; padding: 12px 24px; border-radius: 5px; text-decoration: none; display: inline-block; }
+        .footer { margin-top: 30px; color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Our E-Commerce Platform!</h2>
+        <p>Please confirm your email address by clicking the button below:</p>
+        <a href="@Model" class="button">Confirm Email Address</a>
+        <div class="footer">
+            <p>If you didn't request this email, please ignore it.</p>
+            <p>Best regards,<br/>The E-Commerce Team</p>
+        </div>
+    </div>
+</body>
+</html>
