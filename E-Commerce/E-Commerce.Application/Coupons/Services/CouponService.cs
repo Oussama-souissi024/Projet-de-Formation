@@ -26,7 +26,7 @@ namespace E_Commerce.Application.Coupons.Services
             return _mapper.Map<CouponDto>(addedCoupon);
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task DeleteAsync(Guid id)
         {
             var coupon = await _couponRepository.ReadByIdAsync(new Guid(id.ToString()));
             if (coupon == null)
